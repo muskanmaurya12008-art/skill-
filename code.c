@@ -1,21 +1,20 @@
 #include<stdio.h>
 int main()
 {
-int a=10, b=20, c=15;
-if(a>b)
-{ 
-    printf("A");
-}
-
-
-else if(b>c)
-{
-printf("B");
-}
-else
-{
-    printf("C");
-} 
-
+    int a, b, c;
+    printf("enter three number; ");
+    scanf("%d %d %d", &a, &b, &c);
+    if(a>b)
+    {
+        if(a>c)
+         printf("A is largest");
+        else
+        printf("C is largest");
+    
+    }   
+    else
+    {
+    printf("C is largest");
+    }
 return 0;
 }
